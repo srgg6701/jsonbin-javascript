@@ -1,0 +1,11 @@
+{
+  "name": "jsonbin",
+  "version": "1.0.0",
+  "description": "Using jsbin service and store JSONs for local needs",
+  "main": "jsbin.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "srgg6701",
+  "license": "ISC"
+}

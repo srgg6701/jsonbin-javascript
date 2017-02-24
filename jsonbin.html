@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REST interface</title>
+    <link rel="stylesheet" href="css.css"/>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="api.js"></script>
+</head>
+<body>
+<main>
+    <form>
+        <section>
+            <div id="q-select">
+                <label><input type="radio" name="q-method" value="get" id="radio-get"/>Get</label>
+                <label><input type="radio" name="q-method" value="post" id="radio-post"/>Post</label>
+                <label><input type="radio" name="q-method" value="patch"/>Patch</label>
+                <label><input type="radio" name="q-method" value="delete"/>Delete</label>
+            </div>
+            <div id="q-textarea">
+                <input type="text" name="q-text" id="q-text" placeholder="Put your query text here...">
+                <hr class="separator"/>
+                <textarea class="hidden" name="q-data" id="q-data" placeholder="Put your data here..."></textarea>
+            </div>
+        </section>
+        <br/>
+        <button onclick="sendQuery(this.form, event)">Send query</button>
+        <span id="sending" class="hidden">...sending...</span>
+    </form>
+</main>
+</body>
+</html>
