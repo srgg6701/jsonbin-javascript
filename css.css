@@ -40,9 +40,15 @@ textarea{
 #sending{
     background-color: yellow;
     display: inline-block;
-    margin-left: 4px;
-    padding: 4px 8px;
+}
+.fail{
+    background-color: #ddd;
+    color: red;
 }
 .hidden{
     display: none !important;
+}
+.informer{
+    margin-left: 4px;
+    padding: 4px 8px;
 }

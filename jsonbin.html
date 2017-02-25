@@ -14,8 +14,8 @@
             <div id="q-select">
                 <label><input type="radio" name="q-method" value="get" id="radio-get"/>Get</label>
                 <label><input type="radio" name="q-method" value="post" id="radio-post"/>Post</label>
-                <label><input type="radio" name="q-method" value="patch"/>Patch</label>
-                <label><input type="radio" name="q-method" value="delete"/>Delete</label>
+                <label><input type="radio" name="q-method" value="patch" id="radio-patch"/>Patch</label>
+                <label><input type="radio" name="q-method" value="delete" id="radio-delete"/>Delete</label>
             </div>
             <div id="q-textarea">
                 <input type="text" name="q-text" id="q-text" placeholder="Put your query text here...">
@@ -25,7 +25,8 @@
         </section>
         <br/>
         <button onclick="sendQuery(this.form, event)">Send query</button>
-        <span id="sending" class="hidden">...sending...</span>
+        <span id="sending" class="informer hidden">...sending...</span>
+        <span id="fail" class="informer hidden fail">error 404</span>
     </form>
 </main>
 </body>
