@@ -29,6 +29,25 @@ select, textarea{
 textarea{
     height: 52px;
 }
+.hidden{
+    display: none !important;
+}
+.informer{
+    display: inline-block;
+    margin-left: 4px;
+    padding: 4px 8px;
+}
+#informer-console{
+    background-color: lightskyblue;
+    margin-left: 0;
+}
+#informer-fail{
+    background-color: #ddd;
+    color: red;
+}
+#informer-sending{
+    background-color: yellow;
+}
 #q-textarea{
     width: 100%;
 }
@@ -36,19 +55,4 @@ textarea{
 #q-textarea textarea{
     padding: 4px 10px;
     width: 100%;
-}
-#sending{
-    background-color: yellow;
-    display: inline-block;
-}
-.fail{
-    background-color: #ddd;
-    color: red;
-}
-.hidden{
-    display: none !important;
-}
-.informer{
-    margin-left: 4px;
-    padding: 4px 8px;
 }

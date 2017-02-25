@@ -9,7 +9,7 @@
 </head>
 <body>
 <main>
-    <form>
+    <form id="rest-form" class="hidden">
         <section>
             <div id="q-select">
                 <label><input type="radio" name="q-method" value="get" id="radio-get"/>Get</label>
@@ -18,15 +18,25 @@
                 <label><input type="radio" name="q-method" value="delete" id="radio-delete"/>Delete</label>
             </div>
             <div id="q-textarea">
-                <input type="text" name="q-text" id="q-text" placeholder="Put your query text here...">
+                <input type="text" name="q-text" id="q-text" placeholder="Put path to resource here...">
                 <hr class="separator"/>
                 <textarea class="hidden" name="q-data" id="q-data" placeholder="Put your data here..."></textarea>
             </div>
         </section>
         <br/>
         <button onclick="sendQuery(this.form, event)">Send query</button>
-        <span id="sending" class="informer hidden">...sending...</span>
-        <span id="fail" class="informer hidden fail">error 404</span>
+        <span id="informer-sending" class="informer hidden">...sending...</span>
+        <span id="informer-fail" class="informer hidden">error 404</span>
+        <hr class="separator"/>
+        <div id="informer-console" class="informer hidden">See console output</div>
+    </form>
+    <form id="storage-form" class="hidden">
+        <input type="text" id="user_name" placeholder="User name">
+        <hr class="separator">
+        <input type="text" id="api_key" placeholder="API key">
+        <hr class="separator">
+        <p>If you have no User name and API key, obtain them in <a href="https://jsonbin.org">https://jsonbin.org</a></p>
+        <button id="btn-store-user-data">Save</button>
     </form>
 </main>
 </body>
