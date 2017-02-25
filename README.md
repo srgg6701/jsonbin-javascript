@@ -1,0 +1,1 @@
+#JSONbin javascript interface
